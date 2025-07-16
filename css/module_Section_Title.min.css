@@ -1,0 +1,33 @@
+.section-title.about-section-title {
+  margin-right: -30px;
+  padding-left: 70px;
+}
+@media only screen and (min-width: 1366px) and (max-width: 1499px) {
+  .section-title.about-section-title {
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .section-title.about-section-title {
+    margin-right: 0;
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-title.about-section-title {
+    margin-right: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title.about-section-title {
+    margin-right: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-title.about-section-title {
+    margin-right: 0;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,107 @@
+/*--
+/*  Breadcrumb CSS
+/*----------------------------------------*/
+.single-brand {
+  text-align: center;
+}
+
+.breadcrumb-padding {
+  padding: 200px 0 110px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-padding {
+    padding: 170px 0 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-padding {
+    padding: 160px 0 80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .breadcrumb-padding {
+    padding: 130px 0 56px;
+  }
+}
+
+.breadcrumb-content h1 {
+  line-height: 1;
+  margin: 0 0 25px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+  .breadcrumb-content h1 {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-content h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-content h1 {
+    font-size: 45px;
+    margin: 0 0 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .breadcrumb-content h1 {
+    font-size: 36px;
+    margin: 0 0 12px;
+  }
+}
+.breadcrumb-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumb-content.text-start ul {
+	justify-content: left;
+}
+.breadcrumb-content.text-center ul {
+	justify-content: center;
+}
+.breadcrumb-content.text-end ul {
+	justify-content: right;
+}
+
+.breadcrumb-content ul li {
+  font-weight: 500;
+  margin-right: 33px;
+  line-height: 1;
+  position: relative;
+}
+.breadcrumb-content ul li:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 7px;
+  height: 2px;
+  background-color: var(--base-color);
+}
+.breadcrumb-content ul li:last-child {
+  margin-right: 0;
+}
+.breadcrumb-content ul li:last-child a {
+  color: var(--primary-color);
+}
+.breadcrumb-content ul li:last-child:before {
+  display: none;
+}
+.breadcrumb-content ul li a {
+  color: var(--base-color);
+}
+.breadcrumb-content ul li a:hover {
+  color: var(--primary-color);
+}

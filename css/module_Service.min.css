@@ -1,0 +1,94 @@
+
+/*-------------------
+Services CSS
+-----------------*/
+
+.single-services {
+  padding: 40px 40px 52px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: relative;
+}
+.single-services.text-start {
+  text-align: left;
+}
+.single-services.text-center {
+  text-align: center;
+}
+.single-services.text-end {
+  text-align: right;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-services {
+    padding: 40px 20px 52px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-services {
+    padding: 40px 15px 52px;
+  }
+}
+.single-services h3 {
+  margin-top: 25px;
+  transition: all .3s ease 0s;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-services h3 {
+    font-size: 24px;
+  }
+}
+.single-services h3:hover {
+  color: var(--link-hover-color);
+}
+.single-services p {
+  margin-top: 14px;
+}
+.single-services .more {
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8ece9;
+  border-radius: 100%;
+  font-size: 23px;
+  position: absolute;
+  bottom: -28px;
+  
+  z-index: 1;
+}
+
+.single-services.text-start .more {
+  left: 40px;
+  transform: inherit;
+}
+.single-services.text-center .more {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.single-services.text-end .more {
+  transform: inherit;
+  right: 40px;
+}
+
+.single-services .more svg {
+	width: 16px;
+	height: 16px;
+}
+.single-services .more svg path {
+    stroke: currentColor;
+    fill: currentColor;
+    transition: all .3s linear;
+}
+
+
+

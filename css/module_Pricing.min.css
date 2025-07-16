@@ -1,0 +1,190 @@
+/*--
+/*  4.6 - Pricing CSS
+/*----------------------------------------*/
+.spa-pricing-wrapper {
+  position: relative;
+  margin-top: -50px;
+}
+
+.spa-pricing-content {
+  margin-top: 50px;
+}
+
+.spa-pricing-content p {
+  margin-top: 14px;
+  width: 80%;
+  margin-bottom: 44px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .spa-pricing-content p {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .spa-pricing-content p {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+}
+.spa-pricing-content h4 {
+  color: var(--primary-color);
+  line-height: 1.8;
+  margin-top: 24px;
+  width: 80%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .spa-pricing-content h4 {
+    width: 80%; 
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .spa-pricing-content h4 {
+    width: 100%; 
+  }
+}
+@media only screen and (max-width: 767px) {
+  .spa-pricing-content h4 {
+    width: 100%;
+  }
+  .spa-pricing-content {
+    margin-top: 25px;
+  }
+}
+.spa-pricing-content.text-end h4 {
+  margin-left: auto;
+}
+.spa-pricing-content.text-end p {
+  margin-left: auto;
+}
+.spa-pricing-content.text-center h4 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.spa-pricing-content.text-center p {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 767px) {
+  .spa-pricing-content h4 {
+    line-height: 30px;
+    margin-top: 15px;
+  }
+}
+
+.spa-pricing-table {
+  position: relative;
+}
+.spa-pricing-table .shape-4 {
+  position: absolute;
+  left: -65px;
+  bottom: -22px;
+  z-index: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  .spa-pricing-table .shape-4 {
+    left: 0;
+    width: 130px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .spa-pricing-table .shape-4 {
+    width: 110px;
+  }
+}
+
+.spa-pricing-table-wrapper {
+  background-color: #ffefec;
+  padding: 67px 50px 25px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .spa-pricing-table-wrapper {
+    padding: 25px 20px 25px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .spa-pricing-table-wrapper {
+    padding: 30px 20px 20px;
+  }
+}
+.spa-pricing-table-wrapper .shape-3 {
+  position: absolute;
+  left: 64%;
+  bottom: -50px;
+  z-index: 2;
+}
+.spa-pricing-table-wrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/price-overlay.png);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.spa-pricing-table-wrapper .swiper-container {
+  z-index: 3;
+}
+.spa-pricing-table-wrapper .swiper-container .swiper-wrapper {
+  z-index: 3;
+}
+.spa-pricing-table-wrapper .swiper-container .swiper-wrapper .swiper-slide {
+  z-index: 3;
+}
+.spa-pricing-table-wrapper .swiper-container .swiper-wrapper .swiper-slide .pricing-table-wrapper {
+  position: relative;
+  z-index: 3;
+}
+
+.single-price {
+  margin-top: 14px;
+  padding: 14px 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-price {
+    padding: 14px 20px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .single-price {
+    margin-top: 20px;
+  }
+}
+.single-price h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.pricing-active .swiper-pagination {
+  position: relative;
+  bottom: 5px;
+  margin-top: 40px;
+  height: 17px;
+}
+.pricing-active .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px; 
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.pricing-active .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: transparent;
+}
